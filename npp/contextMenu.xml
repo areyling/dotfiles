@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+By modifying this file, you can customize your context menu popuped as right clicking on the edit zone.
+It may be more convinient to access to your frequent used commands via context menu than via the top menu.
+
+Please check "How to Customize the Context Menu" on:
+http://sourceforge.net/apps/mediawiki/notepad-plus/index.php?title=Context_Menu
+
+You can use command id to add the commands you want. Check english.xml to get commands id:
+http://notepad-plus.svn.sourceforge.net/viewvc/notepad-plus/trunk/PowerEditor/installer/nativeLang/english.xml
+-->
+<NotepadPlus>
+    <ScintillaContextMenu>
+        <!-- id="0" is the separator -->
+        <Item MenuEntryName="Edit" MenuItemName="UPPERCASE"/>
+        <Item MenuEntryName="Edit" MenuItemName="lowercase"/>
+        <Item PluginEntryName="TextFX Characters" PluginCommandItemName="Proper Case" />
+
+        <Item id="0"/>
+        <Item MenuEntryName="Edit" MenuItemName="Toggle block comment"/>
+
+        <Item id="0"/>
+        <Item id="10001" name="Move to Other View"/>
+        <Item id="10003" name="Move to New Instance"/>
+        <Item id="10004" name="Open in New Instance"/>
+        <!--
+        <Item id="10002" name="Clone to Other View"/>
+        -->
+        <Item id="0"/>
+        <Item id="44025" name="Show White Space and TAB"/>
+        <Item id="44026" name="Show End of Line"/>
+        <Item id="44019" name="Show All Characters"/>
+
+        <Item id="0"/>
+        <Item PluginEntryName="XML Tools" PluginCommandItemName="Current XML Path" ItemNameAs="XML Current Path" />
+        <Item PluginEntryName="XML Tools" PluginCommandItemName="Comment selection" ItemNameAs="XML comment" />
+        <Item PluginEntryName="XML Tools" PluginCommandItemName="Uncomment selection" ItemNameAs="XML uncomment" />
+        <!--
+        <Item id="0"/>
+        <Item PluginEntryName="XML Tools" PluginCommandItemName="Pretty print (XML only - with line breaks)" ItemNameAs="XML Pretty Print" />
+        <Item PluginEntryName="XML Tools" PluginCommandItemName="Linarize XML" ItemNameAs="XML Linarize" />
+        <Item PluginEntryName="XML Tools" PluginCommandItemName="Check XML syntax now" />
+
+        <Item id="0"/>
+        <Item PluginEntryName="TextFX Convert" PluginCommandItemName="Submit to W3C CSS Validator" />
+        <Item PluginEntryName="TextFX Convert" PluginCommandItemName="Submit to W3C HTML Validator" />
+
+        <Item id="0"/>
+        <Item PluginEntryName="JSLint" PluginCommandItemName="JSLint Current File" ItemNameAs="JSLint Run" />
+        <Item PluginEntryName="JSLint" PluginCommandItemName="Show Lints" ItemNameAs="JSLint Show" />
+        -->
+
+        <Item id="0"/>
+        <Item id="44010" name="Fold All"/>
+        <Item id="44029" name="Unfold All"/>
+
+        <Item id="0"/>
+        <Item MenuEntryName="Edit" MenuItemName="Cut"/>
+        <Item MenuEntryName="Edit" MenuItemName="Copy"/>
+        <Item MenuEntryName="Edit" MenuItemName="Paste"/>
+        <!--
+        <Item MenuEntryName="Edit" MenuItemName="Delete"/>
+        <Item MenuEntryName="Edit" MenuItemName="Select all"/>
+        -->
+
+        <!--
+        To add plugin commands, you have to use PluginEntryName and PluginCommandItemName to localize the plugin commands
+        <Item FolderName="Xml" PluginEntryName="XML Tools" PluginCommandItemName="Linarize XML" />
+
+        Use ItemNameAs (optional) to rename the menu item name in the context menu
+        ItemNameAs can be used in any type of item. ItemNameAs value can be in any language.
+        <Item FolderName="Plugin commands" PluginEntryName="NppExport" PluginCommandItemName="Copy all formats to clipboard" ItemNameAs="Copy Text with Syntax Highlighting" />
+        -->
+    </ScintillaContextMenu>
+</NotepadPlus>

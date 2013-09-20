@@ -1,0 +1,64 @@
+<NotepadPlus>
+    <UserLang name="Gradle" ext="gradle" udlVersion="2.1">
+        <Settings>
+            <Global caseIgnored="yes" allowFoldOfComments="yes" foldCompact="no" forcePureLC="0" decimalSeparator="0" />
+            <Prefix Keywords1="no" Keywords2="no" Keywords3="no" Keywords4="no" Keywords5="no" Keywords6="no" Keywords7="no" Keywords8="yes" />
+        </Settings>
+        <KeywordLists>
+            <Keywords name="Comments">03/* 04*/ 00// 01 02</Keywords>
+            <Keywords name="Numbers, prefix1"></Keywords>
+            <Keywords name="Numbers, prefix2"></Keywords>
+            <Keywords name="Numbers, extras1"></Keywords>
+            <Keywords name="Numbers, extras2"></Keywords>
+            <Keywords name="Numbers, suffix1"></Keywords>
+            <Keywords name="Numbers, suffix2"></Keywords>
+            <Keywords name="Numbers, range"></Keywords>
+            <Keywords name="Operators1">: [ ] = -&gt;</Keywords>
+            <Keywords name="Operators2"></Keywords>
+            <Keywords name="Folders in code1, open">{</Keywords>
+            <Keywords name="Folders in code1, middle"></Keywords>
+            <Keywords name="Folders in code1, close">}</Keywords>
+            <Keywords name="Folders in code2, open"></Keywords>
+            <Keywords name="Folders in code2, middle"></Keywords>
+            <Keywords name="Folders in code2, close"></Keywords>
+            <Keywords name="Folders in comment, open">/*</Keywords>
+            <Keywords name="Folders in comment, middle"></Keywords>
+            <Keywords name="Folders in comment, close">*/</Keywords>
+            <Keywords name="Keywords1">allprojects android apply artifacts buildscript buildTypes configurations defaultConfig dependencies plugin project repositories sourceSets subprojects task</Keywords>
+            <Keywords name="Keywords2">abstract ant break case catch classpath continue def default delete description destinationDir do doFirst doLast else exclude extends false final finally flatDir flatten for from fromdir group if implements import include includes instanceof into maven native new null options package private protected public return signingConfigs source sourceCompatibility static strictfp super switch synchronized targetCompatibility this throw throws todir transient true try volatile while</Keywords>
+            <Keywords name="Keywords3">antlrtask boolean byte char checkstyle class codenarc copy double float int interface long short void</Keywords>
+            <Keywords name="Keywords4">abs any append asList asWritable call collect compareTo compile count div dump each eachByte eachFile eachLine every file fileTree find findAll flatten getAt getErr getIn getOut getText grep immutable include inject inspect intersect invokeMethods isCase join leftShift logger minus multiply newInputStream newOutputStream newPrintWriter newReader newWriter next plus pop power previous print println push putAt read readBytes readLines reverse reverseEach round runTime size sort splitEachLine step subMap times toInteger tokenize toList upto waitForOrKill withPrintWriter withReader withStream withWriter withWriterAppend write writeLine compile instrumentTestCompile debugCompile releaseCompile</Keywords>
+            <Keywords name="Keywords5">aaptOptions aidlCompile aild.srcDirs assemble assets.srcDirs baseName build buildToolsVersion buildType check clean compileOptions compileSdkVersion config connectedCheck connectedInstrumentTest debuggable description deviceCheck dex dexOptions dirName generateBuildConfig ignoreAssetsPattern incremental install Instrumentation isSigningReady java.srcDirs javaCompile jniDebugBuild keyAlias keyPassword manifest.srcFile mergeAssets mergedFlavor mergeResources minSdkVersion name noCompress outputFile Package packageApplication packageLibrary packageName packageNameSuffix processJavaResources processManifest processResources productFlavors proguardFile proguardFiles providerInstrumentTest renderscript.srcDirs renderscriptCompile renderscriptDebugBuild renderscriptOptimLevel res.srcDirs resources.srcDirs resultsDir runProguard signingConfig sourceCompatibility srcDirs storeFile storePassword targetCompatibility targetSdkVersion testedVariant testInstrumentationRunner testOptions testPackageName testVariant uninstall url versionCode versionName versionNameSuffix zipAlign</Keywords>
+            <Keywords name="Keywords6">debug release instrumentTest</Keywords>
+            <Keywords name="Keywords7"></Keywords>
+            <Keywords name="Keywords8">$</Keywords>
+            <Keywords name="Delimiters">00&quot; 01 02&quot; 03&apos; 04 05&apos; 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23</Keywords>
+        </KeywordLists>
+        <Styles>
+            <WordsStyle name="DEFAULT" fgColor="E0E2E4" bgColor="000000" fontStyle="0" nesting="0" />
+            <WordsStyle name="COMMENTS" fgColor="66747B" bgColor="000000" fontStyle="0" nesting="0" />
+            <WordsStyle name="LINE COMMENTS" fgColor="66747B" bgColor="000000" fontStyle="0" nesting="0" />
+            <WordsStyle name="NUMBERS" fgColor="FFCD22" bgColor="000000" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS1" fgColor="6C788C" bgColor="000000" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS2" fgColor="93C763" bgColor="000000" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS3" fgColor="FF3E3E" bgColor="000000" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS4" fgColor="A082BD" bgColor="000000" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS5" fgColor="ABBFD3" bgColor="000000" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS6" fgColor="A082BD" bgColor="000000" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS7" fgColor="B3B689" bgColor="000000" fontStyle="0" nesting="0" />
+            <WordsStyle name="KEYWORDS8" fgColor="DD6F00" bgColor="000000" fontStyle="0" nesting="0" />
+            <WordsStyle name="OPERATORS" fgColor="B3B689" bgColor="000000" fontStyle="1" nesting="0" />
+            <WordsStyle name="FOLDER IN CODE1" fgColor="E1E2CF" bgColor="000000" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN CODE2" fgColor="E1E2CF" bgColor="000000" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN COMMENT" fgColor="E1E2CF" bgColor="000000" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS1" fgColor="D39745" bgColor="000000" fontStyle="0" nesting="3" />
+            <WordsStyle name="DELIMITERS2" fgColor="D39745" bgColor="000000" fontStyle="0" nesting="3" />
+            <WordsStyle name="DELIMITERS3" fgColor="FFFFFF" bgColor="000000" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS4" fgColor="FFFFFF" bgColor="000000" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS5" fgColor="FFFFFF" bgColor="000000" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS6" fgColor="FFFFFF" bgColor="000000" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS7" fgColor="FFFFFF" bgColor="000000" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS8" fgColor="FFFFFF" bgColor="000000" fontStyle="0" nesting="0" />
+        </Styles>
+    </UserLang>
+</NotepadPlus>
