@@ -1,5 +1,9 @@
 # dotfiles/npp
 
+## install
+
+Still a work in progress. For now, you can run the `install.ps1` or `install.bat` to set up everything here (including any additional user-defined languages added in the same fashion as the ones currently included).
+
 ## what's inside
 
 Notepad++ configuration files, user-defined language definitions and my **Androidian** theme. The theme is [loosely] based off of the [Obsidian v2 theme](http://svn.tuxfamily.org/viewvc.cgi/notepadplus_repository/trunk/PowerEditor/installer/themes/Obsidian.xml?revision=1038&view=markup) for Notepad++.

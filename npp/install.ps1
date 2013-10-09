@@ -13,7 +13,7 @@ $langXmls = Get-ChildItem (Join-Path $scriptPath 'userDefineLang\*.xml') | %{
     $path = $_.FullName
     $xml = [xml](Get-Content $path)
     if($xml -and $xml.NotepadPlus -and $xml.NotepadPlus.UserLang) {
-        Write-Verbose "`tLoaded Notepad++ user-defined language: $($xml.NotepadPlus.UserLang.name)"
+        Write-Verbose "... loaded Notepad++ user-defined language: $($xml.NotepadPlus.UserLang.name)"
         $xml
     } else {
         Write-Error "Invalid user-defined language file: $path"
@@ -30,15 +30,15 @@ if($langXmls -and $langXmls.Count -gt 0) {
     # and save it, backing up the existing definitions file if it exists
     $path = Join-Path $nppUserPath 'userDefineLang.xml'
     if(Test-Path $path) {
-        Write-Verbose 'Backing up the current Notepad++ user-defined language definitions file...'
+        Write-Verbose '... backing up the current Notepad++ user-defined language definitions file'
         $backupPath = [System.IO.Path]::ChangeExtension($path,'.bak')
         if(Test-Path $backupPath) { Remove-Item -Path $backupPath -Force }
         Rename-Item $path $backupPath -Force
     }
     $userLangXml.Save($path)
-    Write-Verbose "Notepad++ user-defined languages saved to: $path"
+    Write-Verbose "... Notepad++ user-defined languages saved to: $path"
 } else {
-    Write-Verbose 'No valid user-defined language definitions found for Notepad++'
+    Write-Verbose '... no valid user-defined language definitions found for Notepad++!'
 }
 
 # install configuration/settings
@@ -49,14 +49,14 @@ if($langXmls -and $langXmls.Count -gt 0) {
     if(Test-Path $source) {
         $path = Join-Path $nppUserPath $_
         if(Test-Path $path) {
-            Write-Verbose "Backing up Notepad++ config file $($_)..."
+            Write-Verbose "... backing up Notepad++ config file: $_"
             $backupPath = [System.IO.Path]::ChangeExtension($path,'.bak')
             if(Test-Path $backupPath) { Remove-Item -Path $backupPath -Force }
             Rename-Item $path $backupPath -Force
         }
         Copy-Item $source -Destination $path -Force
     } else {
-        Write-Verbose "Skipping Notepad++ config file (not found): $_"
+        Write-Verbose "... skipping Notepad++ config file (file not found): $_"
     }
 }
 
@@ -66,5 +66,5 @@ $nppThemesPath = Join-Path $global:nppPath 'themes'
 Get-ChildItem $scriptPath -include theme.*.xml | %{
     $name = $_.Name.Replace('theme.','')
     Copy-Item $_.FullName -Destination (Join-Path $nppThemesPath $name) -Force
-    Write-Verbose "`tCopied Notepad++ theme: $name"
+    Write-Verbose "... copied Notepad++ theme: $name"
 }
