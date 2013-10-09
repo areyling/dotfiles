@@ -1,6 +1,6 @@
 # dotfiles
 
-My personal collection of settings, scripts and other customizations. [Read more here]( http://andrewreyling.com/2013/09/04/dotfiles-disappearance-and-doing/).
+My personal collection of settings, scripts and other customizations.
 
 ## install
 
