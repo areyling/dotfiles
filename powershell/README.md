@@ -20,7 +20,7 @@ The **profile** includes prompt customization based on [this blog post](http://w
 
 Example screenshot:
 
-![custom prompt for PowerShell](https://github.com/areyling/dotfiles/prompt.png "custom prompt for PowerShell")
+![custom prompt for PowerShell](https://raw.github.com/areyling/dotfiles/master/prompt.png)
 
 ## modules
 
