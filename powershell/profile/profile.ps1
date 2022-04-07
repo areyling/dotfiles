@@ -70,7 +70,7 @@ function prompt {
     }
 
     # add version control status, if we're in a repo
-    if(Test-Repository '.git') { Write-VcsStatus }
+    if(Test-Repository '.git') { Write-VcsStatus; Write-Host ' '; }
 
     # §, [char]0x221e is infinity
     Write-Host "`n$([char]0x0A7)" -noNewLine -foregroundColor $promptTheme.promptColor
@@ -87,6 +87,7 @@ if($isAdmin) { $title = 'Admin: ' + $title }
 $Host.Ui.RawUi.WindowTitle = $title
 $host.UI.RawUI.ForegroundColor = $promptTheme.foregroundColor
 $host.UI.RawUI.BackgroundColor = $promptTheme.backgroundColor
+[Console]::BackgroundColor = $promptTheme.backgroundColor
 $bufferSize = $host.UI.RawUI.BufferSize
 $bufferSize.Height = 6000
 $host.UI.RawUI.BufferSize = $bufferSize
